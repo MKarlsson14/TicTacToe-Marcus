@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
 
+    <!--OBS!!!-->
+    
+    <!--Gillar inte denna "Window.Resources" lösning på problemet, men jag försökte på många olika sätt med att byta färg på bakgrunden på knapparna
+    Jag har haft samma bakomliggande kod hela tiden, men det verkar bara fungera när jag använder denna resource. 
+    Jag förstår i det stora hela vad det är som händer, det enda jag är lite fundersam över är "Border"-biten där man sätter
+    olika värden med hjälp av "TemplateBuilding". 
+    
+    Jag kan ju gissa på att det som händer är att man skriver över default värdena med de nya värdena som kommer från 
+    C# koden.
+    
+    Men som sagt så försökte jag testa mig fram på många olika sätt och detta var det enda sättet som ville fungera.-->
+    
     <Window.Resources>
         <Style x:Key="CustomButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="Transparent"/>
